@@ -14,8 +14,8 @@ body#obj h5#this {
 }
 
 body#event h5#this {
-    color: #8400ff;
-    text-shadow: 0rem 0rem 0.7rem #8400ff;
+    color: #9a00ff;
+    text-shadow: 0rem 0rem 0.7rem #9a00ff;
 }
 
 body#eventlis h5#this {
@@ -32,7 +32,7 @@ div.box#obj:hover {
 }
 
 div.box#event:hover {
-    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+    box-shadow: 0rem 0rem 1.5rem 0rem #9a00ff;
 }
 
 div.box#eventlis:hover {
@@ -44,7 +44,7 @@ div.box#eventlis:hover {
 }
 
 #event div.box:hover {
-    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+    box-shadow: 0rem 0rem 1.5rem 0rem #9a00ff;
 }
 
 #eventlis div.box:hover {
@@ -76,7 +76,7 @@ body#obj code[data-link = "true"] {
 }
 
 body#event code[data-link = "true"] {
-    color: #8400ff;
+    color: #9a00ff;
 }
 
 body#eventlis code[data-link = "true"] {
@@ -93,8 +93,8 @@ body#obj i {
 }
 
 body#event i {
-    color: #8400ff;
-    text-shadow: 0rem 0rem 1rem #8400ff;
+    color: #9a00ff;
+    text-shadow: 0rem 0rem 1rem #9a00ff;
 }
 
 body#eventlis i {
@@ -125,7 +125,7 @@ body#obj strong.link {
 }
 
 body#event strong.link {
-    color: #8400ff;
+    color: #9a00ff;
 }
 
 body#eventlis strong.link {
