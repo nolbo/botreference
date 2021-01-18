@@ -156,7 +156,7 @@ div.box > pre {
 
 div.box > pre > code.code {
     font-family: 'JB', 'NGC B';
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 div[data-nonim = "true"] code.code {
