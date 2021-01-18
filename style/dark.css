@@ -1,0 +1,147 @@
+html::-webkit-scrollbar { display: none; }
+div::-webkit-scrollbar {       width: 0.3em; height: 0.4rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: transparent; }
+div::-webkit-scrollbar-thumb { width: 0.3em; height: 0.4rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: black; }
+div::-webkit-scrollbar-track { width: 0.3em; height: 0.4rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: transparent; }
+
+html {
+    color: #dfdfdf;
+    background: #333333;
+}
+
+body#obj h5#this {
+    color: #ff9100;
+    text-shadow: 0rem 0rem 0.7rem #ff9100;
+}
+
+body#event h5#this {
+    color: #8400ff;
+    text-shadow: 0rem 0rem 0.7rem #8400ff;
+}
+
+body#eventlis h5#this {
+    color: #00bbff;
+    text-shadow: 0rem 0rem 0.7rem #00bbff;
+}
+
+div.box {
+    box-shadow: 0rem 0rem 1.5rem 0rem black;
+}
+
+div.box#obj:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
+}
+
+div.box#event:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+}
+
+div.box#eventlis:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+#obj div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
+}
+
+#event div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+}
+
+#eventlis div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+div.box[data-nonim = "true"]:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff00aa !important;
+}
+
+img#obj {
+    filter: drop-shadow(0rem 0rem 0.8rem #ff9100);
+}
+
+img#event {
+    filter: drop-shadow(0rem 0rem 0.8rem #9a00ff);
+}
+
+img#event_lis {
+    filter: drop-shadow(0rem 0rem 0.8rem #00d9ff);
+}
+
+div[data-nonim = "true"] code.code {
+    color: #ff00aa;
+}
+
+body#obj code[data-link = "true"] {
+    color: #ff9100;
+}
+
+body#event code[data-link = "true"] {
+    color: #8400ff;
+}
+
+body#eventlis code[data-link = "true"] {
+    color: #00bbff;
+}
+
+div[data-nonim = "true"] code[data-link = "true"] {
+    color: #ff00aa !important;
+}
+
+body#obj i {
+    color: #ff9100;
+    text-shadow: 0rem 0rem 1rem #ff9100;
+}
+
+body#event i {
+    color: #8400ff;
+    text-shadow: 0rem 0rem 1rem #8400ff;
+}
+
+body#eventlis i {
+    color: #00bbff;
+    text-shadow: 0rem 0rem 1rem #00bbff;
+}
+
+div[data-nonim = "true"] i {
+    color: #ff00aa !important;
+    text-shadow: 0rem 0rem 1rem #ff00aa !important;
+}
+
+div.box > div.txt > p.dscrpt {
+    display: inline;
+    font-size: 1rem;
+    font-family: 'NS B';
+    line-height: 2rem;
+}
+
+strong.link {
+    cursor: pointer;
+    font-family: 'NS EB';
+    text-decoration: underline;
+}
+
+body#obj strong.link {
+    color: #ff9100;
+}
+
+body#event strong.link {
+    color: #8400ff;
+}
+
+body#eventlis strong.link {
+    color: #00bbff;
+}
+
+div[data-nonim = "true"] strong.link {
+    color: #ff00aa !important;
+}
+
+h3.sttl {
+    font-family: 'NS EB';
+    font-size: 1.3rem;
+}
+
+li.para {
+    font-family: 'NS B';
+    line-height: 1.7rem;
+}
