@@ -149,7 +149,8 @@ body#main h4.name {
 
 div.box > pre {
     margin-bottom: 1rem;
-    white-space: pre-line;
+    white-space: pre-wrap;
+    word-break: break-all;
     width: 100%;
 }
 
