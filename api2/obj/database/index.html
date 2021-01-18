@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Database</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Database</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path" id="this">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="exists">
+        <h4 class="name">exists</h4>
+        <pre><code class="code">exists(fileName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트 로컬 폴더 내 <code class="box">Database</code>폴더에 특정 파일이 존재하는지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> : 존재 여부를 확인할 파일 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> 파일이 존재하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="readobject">
+        <h4 class="name">readObject</h4>
+        <pre><code class="code">readObject(fileName: <i>String</i>): <i>Object</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트 로컬 폴더 내 <code class="box">Database</code>폴더의 특정 파일을 읽어 자바스크립트 객체로 변환한 값을 반환합니다. (파일 내용이 JSON형태여야 합니다.)</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> : 자바스크립트 객체형태로 읽을 파일 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> 파일을 자바스크립트 객체로 변환한 값</li>
+        </div>
+    </div>
+    <div class="box" id="readstring">
+        <h4 class="name">readString</h4>
+        <pre><code class="code">readString(fileName: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트 로컬 폴더 내 <code class="box">Database</code>폴더의 특정 파일을 읽은 값을 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> : 읽을 파일 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> 파일의 내용</li>
+        </div>
+    </div>
+    <div class="box" id="writeobject">
+        <h4 class="name">writeObject</h4>
+        <pre><code class="code">writeObject(fileName: <i>String</i>, obj: <i>Object</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트 로컬 폴더 내 <code class="box">Database</code>폴더 내 파일의 내용을 자바스크립트 객체를 문자열로 변환한 값으로 하여 생성 또는 수정합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> : 생성 또는 수정할 파일의 이름</li>
+            <li class="para"><code class="box"><i>obj</i></code> : 문자열화 하여 <code class="box"><i>fileName</i></code> 파일의 내용으로 정할 자바스크립트 객체</li>
+        </div>
+    </div>
+    <div class="box" id="writestring">
+        <h4 class="name">writeString</h4>
+        <pre><code class="code">writeString(fileName: <i>String</i>, str: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트 로컬 폴더 내 <code class="box">Database</code>폴더 내 파일의 내용을 특정 문자열 값으로 하여 생성 또는 수정합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>fileName</i></code> : 생성 또는 수정할 파일의 이름</li>
+            <li class="para"><code class="box"><i>str</i></code> : <code class="box"><i>fileName</i></code> 파일의 내용으로 정할 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Utils</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Utils</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path" id="this">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path">Device</h5><h5 class="path">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="getwebtext">
+        <h4 class="name">getWebText</h4>
+        <pre><code class="code">getWebText(url: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 URL의 HTML을 로드하여 반환합니다. (동기적)</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>url</i></code> : HTML을 로드할 웹페이지의 URL</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>url</i></code>의 HTML을 로드한 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" id="parse">
+        <h4 class="name">parse</h4>
+        <pre><code class="code">parse(url: <i>String</i>): <i>org.jsoup.nodes</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 URL의 HTML을 GET방식으로 로드하여 <code class="box">org.jsoup.nodes.Document</code>로 반환합니다. (동기적)</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>url</i></code> : HTML을 로드할 웹페이지의 URL</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>url</i></code>의 HTML을 로드한 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" id="getandroidversioncode">
+        <h4 class="name">getAndroidVersionCode</h4>
+        <pre><code class="code">getAndroidVersionCode(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 안드로이드 버전 코드를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 안드로이드 버전 코드</li>
+        </div>
+    </div>
+    <div class="box" id="getandroidversionname">
+        <h4 class="name">getAndroidVersionName</h4>
+        <pre><code class="code">getAndroidVersionName(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 안드로이드 버전 이름을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 안드로이드 버전 이름</li>
+        </div>
+    </div>
+    <div class="box" id="getphonebrand">
+        <h4 class="name">getPhoneBrand</h4>
+        <pre><code class="code">getPhoneBrand(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 휴대폰 브랜드명을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 휴대폰 브랜드명</li>
+        </div>
+    </div>
+    <div class="box" id="getphonemodel">
+        <h4 class="name">getPhoneModel</h4>
+        <pre><code class="code">getPhoneModel(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 휴대폰 모델명을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 휴대폰 모델명</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

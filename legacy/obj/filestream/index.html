@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | FileStream</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">FileStream</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path">Utils</h5><h5 class="path" id="this">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path">Device</h5><h5 class="path">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="read">
+        <h4 class="name">read</h4>
+        <pre><code class="code">read(path: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 파일 경로에 있는 파일의 내용을 읽습니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>path</i></code> : 읽을 파일의 경로</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>path</i></code> 파일의 내용</li>
+        </div>
+    </div>
+    <div class="box" id="write">
+        <h4 class="name">write</h4>
+        <pre><code class="code">write(path: <i>String</i>, data: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 파일 경로에 있는 파일의 내용에 입력된 값을 덮어쓰거나 파일을 새로 생성합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>path</i></code> : 덮어쓰거나 생성할 파일의 경로</li>
+            <li class="para"><code class="box"><i>data</i></code> : <code class="box"><i>path</i></code> 파일에 덮어쓸 내용이나 생성한 파일의 내용</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>path</i></code> 파일의 최종 내용</li>
+        </div>
+    </div>
+    <div class="box" id="append">
+        <h4 class="name">append</h4>
+        <pre><code class="code">append(path: <i>String</i>, data: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 파일 경로에 있는 파일의 내용에 입력된 값을 이어 씁니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>path</i></code> : 내용을 이어 쓸 파일의 경로</li>
+            <li class="para"><code class="box"><i>data</i></code> : <code class="box"><i>path</i></code> 파일에 이어 쓸 내용</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>path</i></code> 파일의 최종 내용</li>
+        </div>
+    </div>
+    <div class="box" id="remove">
+        <h4 class="name">remove</h4>
+        <pre><code class="code">remove(path: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">입력된 파일 경로에 있는 파일을 삭제합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>path</i></code> : 삭제할 파일의 경로</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">삭제를 정상적으로 완료하면 <code class="box">java.io.File.delete()</code>의 결과값</li>
+            <li class="para">삭제 중 예외가 발생하면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

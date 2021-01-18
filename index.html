@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/dscprt1.css"   media="all and (min-width:1024px)">
+    <link rel="stylesheet" href="style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="img/legacy.png">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/href.js"></script>
+    <title>KBot Reference</title>
+</head>
+<body id="main">
+    <div class="title">
+        <h2 class="title">레거시 API</h2>
+    </div>
+    <div class="box" id="obj" data-folder="legacy">
+        <div class="boxttl">
+            <img class="icon" id="obj" src="img/function.png"><h2 class="title">객체</h2>
+        </div>
+        <h4 class="name">Api</h4>
+        <div class="list" data-folder="legacy_obj_api">
+            <h5 class="path">getContext</h5><h5 class="path">reload</h5><h5 class="path">compile</h5><h5 class="path">prepare</h5><h5 class="path">unload</h5><h5 class="path">off</h5><h5 class="path">on</h5><h5 class="path">isOn</h5><h5 class="path">isCompiled</h5><h5 class="path">isCompiling</h5><h5 class="path">getScriptNames</h5><h5 class="path">replyRoom</h5><h5 class="path">canReply</h5><h5 class="path">showToast</h5><h5 class="path">makeNoti</h5><h5 class="path">papagoTranslate</h5><h5 class="path">gc</h5><h5 class="path">UIThread</h5><h5 class="path">getActiveThreadsCound</h5><h5 class="path">interruptThreads</h5><h5 class="path">isTerminated</h5><h5 class="path">markAsRead</h5>
+        </div>
+        <h4 class="name">Utils</h4>
+        <div class="list" data-folder="legacy_obj_utils">
+            <h5 class="path">getWebText</h5><h5 class="path">parse</h5><h5 class="path">getAndroidVersionCode</h5><h5 class="path">getAndroidVersionName</h5><h5 class="path">getPhoneBrand</h5><h5 class="path">getPhoneModel</h5>
+        </div>
+        <h4 class="name">FileStream</h4>
+        <div class="list" data-folder="legacy_obj_filestream">
+            <h5 class="path">read</h5><h5 class="path">write</h5><h5 class="path">append</h5><h5 class="path">remove</h5>
+        </div>
+        <h4 class="name">DataBase</h4>
+        <div class="list" data-folder="legacy_obj_database">
+            <h5 class="path">getDataBase</h5><h5 class="path">setDataBase</h5><h5 class="path">appendDataBase</h5><h5 class="path">removeDataBase</h5>
+        </div>
+        <h4 class="name">Log</h4>
+        <div class="list" data-folder="legacy_obj_log">
+            <h5 class="path">d</h5><h5 class="path">debug</h5><h5 class="path">e</h5><h5 class="path">error</h5><h5 class="path">i</h5><h5 class="path">info</h5><h5 class="path">clear</h5>
+        </div>
+        <h4 class="name">Device</h4>
+        <div class="list" data-folder="legacy_obj_device">
+            <h5 class="path">getBuild</h5><h5 class="path">getAndroidVersionCode</h5><h5 class="path">getAndroidVersionName</h5><h5 class="path">getPhoneBrand</h5><h5 class="path">getPhoneModel</h5><h5 class="path">isCharging</h5><h5 class="path">getPlugType</h5><h5 class="path">getPlugType</h5><h5 class="path">getBatteryLevel</h5><h5 class="path">getBatteryHealth</h5><h5 class="path">getBatteryTemperature</h5><h5 class="path">getBatteryVoltage</h5><h5 class="path">getBatteryStatus</h5><h5 class="path">getBatteryIntent</h5>
+        </div>
+        <h4 class="name">Bridge</h4>
+        <div class="list" data-folder="legacy_obj_bridge">
+            <h5 class="path">getScopeOf</h5><h5 class="path">isAllowed</h5>
+        </div>
+        <h4 class="name">AppData</h4>
+        <div class="list" data-folder="legacy_obj_appdata">
+            <h5 class="path">putBoolean</h5><h5 class="path">getBoolean</h5><h5 class="path">putInt</h5><h5 class="path">getInt</h5><h5 class="path">putString</h5><h5 class="path">getString</h5><h5 class="path">remove</h5><h5 class="path">clear</h5>
+        </div>
+    </div>
+    <div class="box" id="eventlis" data-folder="legacy">
+        <div class="boxttl">
+            <img class="icon" id="event_lis" src="img/event_listener.png"><h2 class="title">이벤트 리스너</h2>
+        </div>
+        <h4 class="name">response</h4>
+        <h4 class="name">onStartCompile</h4>
+        <h4 class="name">onNotificationPosted</h4>
+        <h4 class="name">onCreate</h4>
+        <h4 class="name">onPause</h4>
+        <h4 class="name">onResume</h4>
+        <h4 class="name">onStop</h4>
+    </div>
+    <div class="title">
+        <h2 class="title">API2</h2>
+    </div>
+    <div class="box" id="obj" data-folder="api2">
+        <div class="boxttl">
+            <img class="icon" id="obj" src="img/function.png"><h2 class="title">객체</h2>
+        </div>
+        <h4 class="name">App</h4>
+        <div class="list" data-folder="api2_obj_app">
+            <h5 class="path">getContext</h5><h5 class="path">runOnUiThread</h5>
+        </div>
+        <h4 class="name">Bot</h4>
+        <div class="list" data-folder="api2_obj_bot">
+            <h5 class="path">setCommandPrefix</h5><h5 class="path">send</h5><h5 class="path">canReply</h5><h5 class="path">getName</h5><h5 class="path">setPower</h5><h5 class="path">getPower</h5><h5 class="path">compile</h5><h5 class="path">unload</h5><h5 class="path">on</h5><h5 class="path">addListener</h5><h5 class="path">off</h5><h5 class="path">removeListener</h5><h5 class="path">removeAllListeners</h5><h5 class="path">prependListener</h5><h5 class="path">listeners</h5><h5 class="path">markAsRead</h5>
+        </div>
+        <h4 class="name">BotManager</h4>
+        <div class="list" data-folder="api2_obj_botmanager">
+            <h5 class="path">getCurrentBot</h5><h5 class="path">getBot</h5><h5 class="path">getRooms</h5><h5 class="path">getBotList</h5><h5 class="path">getPower</h5><h5 class="path">setPower</h5><h5 class="path">compile</h5><h5 class="path">compileAll</h5><h5 class="path">prepare</h5><h5 class="path">prepareAll</h5><h5 class="path">isCompiled</h5><h5 class="path">unload</h5>
+        </div>
+        <h4 class="name">Broadcast</h4>
+        <div class="list" data-folder="api2_obj_broadcast">
+            <h5 class="path">send</h5><h5 class="path">register</h5><h5 class="path">unregister</h5><h5 class="path">unregisterAll</h5>
+        </div>
+        <h4 class="name">Database</h4>
+        <div class="list" data-folder="api2_obj_database">
+            <h5 class="path">exists</h5><h5 class="path">readObject</h5><h5 class="path">readString</h5><h5 class="path">writeObject</h5><h5 class="path">writeString</h5>
+        </div>
+        <h4 class="name">Event</h4>
+        <div class="list" data-folder="api2_obj_event">
+            <h5 class="path">Activity.BACK_PROSSED</h5><h5 class="path">Activity.CREATE</h5><h5 class="path">Activity.DESTROY</h5><h5 class="path">Activity.PAUSE</h5><h5 class="path">Activity.RESTART</h5><h5 class="path">Activity.RESUME</h5><h5 class="path">Activity.START</h5><h5 class="path">Activity.STOP</h5><h5 class="path">NOTIFICATION_POSTED</h5><h5 class="path">START_COMPILE</h5><h5 class="path">TICK</h5><h5 class="path">COMMAND</h5><h5 class="path">MESSAGE</h5>
+        </div>
+        <h4 class="name">Http</h4>
+        <div class="list" data-folder="api2_obj_http">
+            <h5 class="path">request</h5><h5 class="path">requestSync</h5>
+        </div>
+        <h4 class="name">SessionManager</h4>
+        <div class="list" data-folder="api2_obj_sessionmanager">
+            <h5 class="path">bindSession</h5>
+        </div>
+        <h4 class="name">Security</h4>
+        <div class="list" data-folder="api2_obj_security">
+            <h5 class="path">aesDecode</h5><h5 class="path">aesEncode</h5><h5 class="path">ariaDecode</h5><h5 class="path">ariaEncode</h5><h5 class="path">base32Decode</h5><h5 class="path">base32Encode</h5><h5 class="path">base64Decode</h5><h5 class="path">base64Encode</h5><h5 class="path">desDecode</h5><h5 class="path">desEncode</h5><h5 class="path">desKey</h5><h5 class="path">des3Decode</h5><h5 class="path">des3Encode</h5><h5 class="path">eccDecode</h5><h5 class="path">eccEncode</h5><h5 class="path">hashCode</h5><h5 class="path">md2</h5><h5 class="path">md5</h5><h5 class="path">rc4Decode</h5><h5 class="path">rc4Encode</h5><h5 class="path">seedDecode</h5><h5 class="path">seedEncode</h5><h5 class="path">sha</h5><h5 class="path">sha256</h5><h5 class="path">sha384</h5><h5 class="path">sha512</h5><h5 class="path">sha3_224</h5><h5 class="path">sha3_256</h5><h5 class="path">sha3_384</h5><h5 class="path">sha3_512</h5>
+        </div>
+    </div>
+    <div class="box" id="event" data-folder="api2">
+        <div class="boxttl">
+            <img class="icon" id="event" src="img/event.png"><h2 class="title">이벤트</h2>
+        </div>
+        <h4 class="name">activityBackPressed</h4>
+        <h4 class="name">activityCreate</h4>
+        <h4 class="name">activityDestroy</h4>
+        <h4 class="name">activityPause</h4>
+        <h4 class="name">activityRestart</h4>
+        <h4 class="name">activityResume</h4>
+        <h4 class="name">activityStart</h4>
+        <h4 class="name">activityStop</h4>
+        <h4 class="name">command</h4>
+        <h4 class="name">message</h4>
+        <h4 class="name">notificationPosted</h4>
+        <h4 class="name">startCompile</h4>
+        <h4 class="name">tick</h4>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

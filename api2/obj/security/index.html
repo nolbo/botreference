@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Security</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Security</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path" id="this">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="aesdecode">
+        <h4 class="name">aesDecode</h4>
+        <pre><code class="code">aesDecode(key: <i>String</i>, initVector: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 AES 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : AES 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>initVector</i></code> : 초기화 벡터</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 AES 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="aesencode">
+        <h4 class="name">aesEncode</h4>
+        <pre><code class="code">aesEncode(key: <i>String</i>, initVector: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 AES 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : AES 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>initVector</i></code> : 초기화 벡터</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 AES 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="ariadecode">
+        <h4 class="name">ariaDecode</h4>
+        <pre><code class="code">ariaDecode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 ARIA 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : ARIA 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 ARIA 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="ariaencode">
+        <h4 class="name">ariaEncode</h4>
+        <pre><code class="code">ariaEncode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 AES 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : ARIA 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 ARIA 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="base32decode">
+        <h4 class="name">base32Decode</h4>
+        <pre><code class="code">base32Decode(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 Base32 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 Base32 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="base32encode">
+        <h4 class="name">base32Encode</h4>
+        <pre><code class="code">base32Encode(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 Base32 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 Base32 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="base64decode">
+        <h4 class="name">base64Decode</h4>
+        <pre><code class="code">base64Decode(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 Base64 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 Base64 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="base64encode">
+        <h4 class="name">base64Encode</h4>
+        <pre><code class="code">base64Encode(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 Base64 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 Base64 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="desdecode">
+        <h4 class="name">desDecode</h4>
+        <pre><code class="code">desDecode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 DES 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : DES 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 DES 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="desencode">
+        <h4 class="name">desEncode</h4>
+        <pre><code class="code">desEncode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 DES 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : DES 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 DES 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="deskey">
+        <h4 class="name">desKey</h4>
+        <pre><code class="code">desKey(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">DES 보조키를 생성하여 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">생성한 DES 보조키</li>
+        </div>
+    </div>
+    <div class="box" id="des3decode">
+        <h4 class="name">des3Decode</h4>
+        <pre><code class="code">des3Decode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 DES3 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : DES3 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 DES3 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="des3encode">
+        <h4 class="name">des3Encode</h4>
+        <pre><code class="code">des3Encode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 DES3 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : DES3 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 DES3 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="eccdecode">
+        <h4 class="name">eccDecode</h4>
+        <pre><code class="code">eccDecode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 ECC 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : ECC 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 ECC 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="eccencode">
+        <h4 class="name">eccEncode</h4>
+        <pre><code class="code">eccEncode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 ECC 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : ECC 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 ECC 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="hashcode">
+        <h4 class="name">hashCode</h4>
+        <pre><code class="code">hashCode(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 해시코드를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 해시코드를 추출할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 의 해시코드</li>
+        </div>
+    </div>
+    <div class="box" id="md2">
+        <h4 class="name">md2</h4>
+        <pre><code class="code">md2(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 MD2 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 MD2 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="md5">
+        <h4 class="name">md5</h4>
+        <pre><code class="code">md5(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 MD5 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 MD5 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="rc4decode">
+        <h4 class="name">rc4Decode</h4>
+        <pre><code class="code">rc4Decode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 RC4 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : RC4 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 RC4 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="rc4encode">
+        <h4 class="name">rc4Encode</h4>
+        <pre><code class="code">rc4Encode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 RC4 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : RC4 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 RC4 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="seeddecode">
+        <h4 class="name">seedDecode</h4>
+        <pre><code class="code">seedDecode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SEED 복호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : SEED 복호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 복호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SEED 복호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="seedencode">
+        <h4 class="name">seedEncode</h4>
+        <pre><code class="code">seedEncode(key: <i>String</i>, value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SEED 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : SEED 암호화를 위한 키</li>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SEED 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha">
+        <h4 class="name">sha</h4>
+        <pre><code class="code">sha(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha256">
+        <h4 class="name">sha256</h4>
+        <pre><code class="code">sha256(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA256 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA256 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha384">
+        <h4 class="name">sha384</h4>
+        <pre><code class="code">sha384(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA384 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA384 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha512">
+        <h4 class="name">sha512</h4>
+        <pre><code class="code">sha512(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA512 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA512 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha3_224">
+        <h4 class="name">sha3_224</h4>
+        <pre><code class="code">sha3_224(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA3-224 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA3-224 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha3_256">
+        <h4 class="name">sha3_256</h4>
+        <pre><code class="code">sha3_256(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA3-256 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA3-256 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha3_384">
+        <h4 class="name">sha3_384</h4>
+        <pre><code class="code">sha3_384(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA3-384 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA3-384 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" id="sha3_512">
+        <h4 class="name">sha3_512</h4>
+        <pre><code class="code">sha3_512(value: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 값의 SHA3-512 암호화 결과를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>value</i></code> : 암호화할 값</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>value</i></code> 을 SHA3-512 암호화한 값</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

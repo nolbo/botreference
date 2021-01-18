@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'NS';
+    src: url(fonts/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NS L';
+    src: url(fonts/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NS B';
+    src: url(fonts/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NS EB';
+    src: url(fonts/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'JB';
+    src: url(fonts/JetBrainsMono-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'JB B';
+    src: url(fonts/JetBrainsMono-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'JB I';
+    src: url(fonts/JetBrainsMono-Medium-Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NGC';
+    src: url(fonts/NanumGothicCoding-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NGC B';
+    src: url(fonts/NanumGothicCoding-Bold.ttf) format('truetype');
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | AppData</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">AppData</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path">Device</h5><h5 class="path">Bridge</h5><h5 class="path" id="this">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="putboolean">
+        <h4 class="name">putBoolean</h4>
+        <pre><code class="code">putBoolean(key: <i>String</i>, boolean: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터에 불린 값을 씁니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 쓸 앱 데이터와 쌍을 이루는 키</li>
+            <li class="para"><code class="box"><i>boolean</i></code> : <code class="box"><i>key</i></code> 에 대한 불린 값</li>
+        </div>
+    </div>
+    <div class="box" id="getboolean">
+        <h4 class="name">getBoolean</h4>
+        <pre><code class="code">getBoolean(key: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터로부터 불린 값을 불러옵니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 불러올 앱 데이터의 키</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>key</i></code> 의 값</li>
+        </div>
+    </div>
+    <div class="box" id="putint">
+        <h4 class="name">putInt</h4>
+        <pre><code class="code">putInt(key: <i>String</i>, integer: <i>Int</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터에 정수 값을 씁니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 쓸 앱 데이터와 쌍을 이루는 키</li>
+            <li class="para"><code class="box"><i>integer</i></code> : <code class="box"><i>key</i></code> 에 대한 정수 값</li>
+        </div>
+    </div>
+    <div class="box" id="getint">
+        <h4 class="name">getInt</h4>
+        <pre><code class="code">getInt(key: <i>String</i>): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터로부터 정수 값을 불러옵니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 불러올 앱 데이터의 키</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>key</i></code> 의 앱 데이터</li>
+        </div>
+    </div>
+    <div class="box" id="putstring">
+        <h4 class="name">putString</h4>
+        <pre><code class="code">putString(key: <i>String</i>, string: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터에 문자열 값을 씁니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 쓸 앱 데이터와 쌍을 이루는 키</li>
+            <li class="para"><code class="box"><i>string</i></code> : <code class="box"><i>key</i></code> 에 대한 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" id="getstring">
+        <h4 class="name">getString</h4>
+        <pre><code class="code">getString(key: <i>String</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 데이터로부터 문자열 값을 불러옵니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 불러올 앱 데이터의 키</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>key</i></code> 의 앱 데이터</li>
+        </div>
+    </div>
+    <div class="box" id="remove">
+        <h4 class="name">remove</h4>
+        <pre><code class="code">remove(key: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">AppData</code>를 통해 저장한 특정 키에 해당하는 앱 데이터를 삭제합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>key</i></code> : 삭제할 앱 데이터에 대한 키</li>
+        </div>
+    </div>
+    <div class="box" id="clear">
+        <h4 class="name">clear</h4>
+        <pre><code class="code">clear(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">AppData</code>를 통해 저장한 모든 앱 데이터를 삭제합니다.</p>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

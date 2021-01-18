@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Bridge</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Bridge</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path">Device</h5><h5 class="path" id="this">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="getscopeof">
+        <h4 class="name">getScopeOf</h4>
+        <pre><code class="code">getScopeOf(scriptName: <i>String</i>): <i>org.mozilla.javascript.ScriptableObject</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트의 전역 스코프를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 전역 스코프를 반환할 대상 스크립트</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> 스크립트의 전역 스코프</li>
+        </div>
+    </div>
+    <div class="box" id="isallowed">
+        <h4 class="name">isAllowed</h4>
+        <pre><code class="code">isAllowed(scriptName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트의 <code class="box">Bridge</code>에 의한 접근 허용 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : <code class="box">Bridge</code>에 의한 접근 허용 여부를 확인할 스크립트</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">Bridge</code>에 의한 <code class="box"><i>scriptName</i></code> 스크립트 접근이 허용되면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

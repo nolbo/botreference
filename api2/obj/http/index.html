@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Http</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Http</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path" id="this">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="request">
+        <h4 class="name">request</h4>
+        <pre>
+            <code class="code">request(url: <i>String</i>, callBack: <i>Function</i>): <i>void</i></code>
+            <code class="code">request(option: <i>Object</i>, callBack: <i>Function</i>): <i>void</i></code>
+        </pre>
+        <div class="txt">
+            <p class="dscrpt">특정 URL에 Jsoup을 통해 비동기적으로 request를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>url</i></code> : request를 보낼 URL</li>
+            <li class="para"><code class="box"><i>option</i></code> : request 옵션 (<strong class="link" id="#option" data-nottab="true">옵션 구조</strong>)</li>
+            <li class="para"><code class="box"><i>callBack</i></code> : request 후 실행할 콜백 함수 (<strong class="link" id="#callbackargs" data-nottab="true">인자 정보</strong>)</li>
+        </div>
+    </div>
+    <div class="box" id="requestsync">
+        <h4 class="name">requestSync</h4>
+        <pre>
+            <code class="code">requestSync(url: <i>String</i>): <i>org.jsoup.nodes.Document</i></code>
+            <code class="code">requestSync(option: <i>Object</i>): <i>org.jsoup.nodes.Document</i></code>
+        </pre>
+        <div class="txt">
+            <p class="dscrpt">특정 URL에 Jsoup을 통해 동기적으로 request를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>url</i></code> : request를 보낼 URL</li>
+            <li class="para"><code class="box"><i>option</i></code> : request 옵션 (<strong class="link" id="#option" data-nottab="true">옵션 구조</strong>)</li>
+        </div>
+    </div>
+    <div class="box" id="callbackargs">
+        <h4 class="name">CallBack 인자 정보</h4>
+        <pre>
+            <code class="code">error: <i>java.lang.Exception</i></code>
+            <code class="code">response: <i>org.jsoup.Connection.Response</i></code>
+            <code class="code">doc: <i>org.jsoup.nodes.Document</i></code>
+        </pre>
+    </div>
+    <div class="box" id="option">
+        <h4 class="name">request 옵션 구조</h4>
+        <pre>
+            <code class="code">{</code>
+            &emsp;<code class="code"><i>"url"</i> : String</code>
+            &emsp;<code class="code"><i>"timeout"</i> : Number</code>
+            &emsp;<code class="code"><i>"method"</i> : String</code>
+            &emsp;<code class="code"><i>"headers"</i> : { /* Header */ }</code>
+            <code class="code">}</code>
+        </pre>
+        <div class="txt">
+            <li class="para"><code class="box"><i>url</i></code> : request를 보낼 URL</li>
+            <li class="para"><code class="box"><i>timeout</i></code> : request 타임아웃 (ms, 기본값: <code class="box">3000</code>)</li>
+            <li class="para"><code class="box"><i>method</i></code> : request 메소드 (기본값: <code class="box">"GET"</code>)</li>
+            <li class="para"><code class="box"><i>headers</i></code> : request 헤더 (기본값: <code class="box">null</code>)</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

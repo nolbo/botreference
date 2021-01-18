@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../img/event_listener.png">
+    <script type="text/javascript" src="../../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../../script/href.js"></script>
+    <title>KBot Reference | replier</title>
+</head>
+<body id="eventlis">
+    <div class="title">
+        <h2 class="title">replier</h2>
+    </div>
+    <div class="box" id="reply">
+        <h4 class="name">reply</h4>
+        <pre><code class="code">reply(room?: <i>String</i>, msg: <i>String</i>, hideToast?: <i>Boolean</i>): <i>void</i> | <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방 또는 메시지가 온 방에 메시지를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room?</i></code> : 메시지를 보낼 방 이름</li>
+            <li class="para"><code class="box"><i>msg</i></code> : 보낼 메시지의 내용</li>
+            <li class="para"><code class="box"><i>hideToast?</i></code> : <code class="box"><i>room?</i></code>의 값이 있을 경우, 방의 세션을 가지고 있는지를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>room?</i></code> 값이 있을 경우) <code class="box">room?</code>방에 대한 답장 세션을 가지고 있으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="replydelayed">
+        <h4 class="name">replyDelayed</h4>
+        <pre><code class="code">replyDelayed(room?: <i>String</i>, msg: <i>String</i>, delay: <i>Long</i>, hideToast?: <i>Boolean</i>): <i>void</i> | <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방 또는 메시지가 온 방에 지정한 시간이 지난 후 메시지를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room?</i></code> : 메시지를 보낼 방 이름</li>
+            <li class="para"><code class="box"><i>msg</i></code> : 보낼 메시지의 내용</li>
+            <li class="para"><code class="box"><i>delay</i></code> : 답장 지연 시간 (단위: 밀리초)</li>
+            <li class="para"><code class="box"><i>hideToast?</i></code> : <code class="box"><i>room?</i></code>의 값이 있을 경우, 방의 세션을 가지고 있는지를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>room?</i></code> 값이 있을 경우) <code class="box">room?</code>방에 대한 답장 세션을 가지고 있으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="markasread">
+        <h4 class="name">markAsRead</h4>
+        <pre><code class="code">markAsRead(room?: <i>String</i>, packageName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방 또는 메시지가 온 방의 메시지를 읽음 처리합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room?</i></code> : 메시지를 읽음 처리할 방 이름</li>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 메시지를 읽음 처리할 메신저 앱의 패키지명</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">알림 읽기 액션을 찾을 수 있으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

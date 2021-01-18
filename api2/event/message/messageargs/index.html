@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../img/event.png">
+    <script type="text/javascript" src="../../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../../script/href.js"></script>
+    <title>KBot Reference | message 인자정보</title>
+</head>
+<body id="event">
+    <div class="title">
+        <h2 class="title">message 인자정보</h2>
+    </div>
+    <div class="box" id="message_인자정보">
+        <h4 class="name">message 인자정보</h4>
+        <pre>
+            <code class="code">{</code>
+            &emsp;<code class="code"><i>"room"</i> : String,</code>
+            &emsp;<code class="code"><i>"content"</i> : String,</code>
+            &emsp;<code class="code"><i>"isGroupChat"</i> : Boolean,</code>
+            &emsp;<code class="code"><i>"isDebugRoom"</i> : Boolean,</code>
+            &emsp;<code class="code"><i>"author"</i> : {</code>
+            &emsp;&emsp;<code class="code"><i>"name"</i> : String,</code>
+            &emsp;&emsp;<code class="code"><i>"avatar"</i> : {</code>
+            &emsp;&emsp;&emsp;<code class="code"><i>"getBase64"</i> : Function,</code>
+            &emsp;&emsp;&emsp;<code class="code"><i>"getBitmap"</i> : Function</code>
+            &emsp;&emsp;<code class="code">}</code>
+            &emsp;<code class="code">},</code>
+            &emsp;<code class="code"><i>"reply"</i> : Function(content),</code>
+            &emsp;<code class="code"><i>"markAsRead"</i> : Function,</code>
+            &emsp;<code class="code"><i>"packageName"</i> : String</code>
+            <code class="code">}</code>
+        </pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box" id="../" data-link="true">message</code>이벤트를 발생시킨 메시지에 대한 정보를 담고있는 인자입니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 명령어가 수신된 방 이름</li>
+            <li class="para"><code class="box"><i>content</i></code> : 수신된 메시지의 내용</li>
+            <li class="para"><code class="box"><i>isGroupChat</i></code> : 방 내 인원이 3인 이상이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+            <li class="para"><code class="box"><i>isDebugRoom</i></code> : 디버깅룸에서 수신된 메시지면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+            <li class="para"><code class="box"><i>author</i></code> : 메시지 전송자에 대한 정보를 담고 있는 객체
+                <ul>
+                    <li class="para"><code class="box"><i>name</i></code> : 메시지를 전송한 수신자의 닉네임</li>
+                    <li class="para"><code class="box"><i>avatar</i></code> : 수신자의 프로필에 대한 정보
+                        <ul>
+                            <li class="para"><code class="box"><i>getBase64</i></code> : 수신자 프로필의 Base64값을 반환하는 함수</li>
+                            <li class="para"><code class="box"><i>getBitmap</i></code> : 수신자 프로필에 대한 <code class="box">android.graphics.Bitmap</code>객체를 반환하는 함수</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="para"><code class="box"><i>reply</i></code> : <code class="box"><i>content</i></code> 라는 내용의 메시지를 전송하는 함수</li>
+            <li class="para"><code class="box"><i>markAsRead</i></code> : 메시지가 수신된 방의 알림을 읽음으로 표시하는 함수 (성공하면 <code class="box">true</code>, 아니면 <code class="box">false</code> 반환)</li>
+            <li class="para"><code class="box"><i>packageName</i></code> : 메시지가 수신된 메신저 앱의 패키지명</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

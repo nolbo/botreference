@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/event_listener.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | response</title>
+</head>
+<body id="eventlis">
+    <div class="title">
+        <h2 class="title">response</h2>
+        <div class="list">
+            <h5 class="path" id="this">response</h5><h5 class="path">onStartCompile</h5><h5 class="path">onNotificationPosted</h5><h5 class="path">onCreate</h5><h5 class="path">onPause</h5><h5 class="path">onResume</h5><h5 class="path">onStop</h5>
+        </div>
+    </div>
+    <div class="box" id="response">
+        <h4 class="name">response</h4>
+        <pre><code class="code">response(room, msg, sender, isGroupChat, replier, imageDB, packageName)</code></pre>
+        <div class="txt">
+            <p class="dscrpt">카카오톡 봇 앱이 사용자가 지정한 메신저 앱의 알림을 성공적으로 파싱했을 경우 호출되는 이벤트 리스너입니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 메시지가 온 채팅방의 이름</li>
+            <li class="para"><code class="box"><i>msg</i></code> : 메시지의 내용</li>
+            <li class="para"><code class="box"><i>sender</i></code> : 메시지를 보낸 사람의 닉네임</li>
+            <li class="para"><code class="box"><i>isGroupChat</i></code> : 3인 이상의 채팅방 인지의 여부 (3인 이상일 경우<code class="box">true</code>, 아니면 <code class="box">false</code>)</li>
+            <li class="para"><code class="box"><i id="replier" data-link="true">replier</i></code> : 답장을 보내기 위한 객체</li>
+            <li class="para"><code class="box"><i id="imagedb" data-link="true">imageDB</i></code> : 프로필 사진 정보를 담고 있는 객체</li>
+            <li class="para"><code class="box"><i>packageName</i></code> : 채팅이 온 메신저 앱의 패키지명</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

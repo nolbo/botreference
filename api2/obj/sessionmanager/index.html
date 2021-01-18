@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | sessionManager</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">sessionManager</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path" id="this">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="bindsession">
+        <h4 class="name">bindSession</h4>
+        <pre><code class="code">bindSession(packageName?: <i>String</i>, room: <i>String</i>, action?: <i>android.app.Notification.Action</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">다른 메신저앱의 특정 방에 채팅이 수신되었을 때에도 <code class="box">Bot.send()</code>나 <code class="box">msg.reply()</code> 등을 사용할 수 있게 합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 답장을 수신할 메신저 앱의 패키지명</li>
+            <li class="para"><code class="box"><i>room</i></code> : 답장을 수신할 메신저 앱 내의 채팅방</li>
+            <li class="para"><code class="box"><i>action?</i></code> : 답장 기능을 수행하기 위한 <code class="box">android.app.Notification.Action</code>값 (기본값: <code class="box">null</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>action?</i></code>과 메신저봇이 자동 분석한 답장 액션 모두 <code class="box">null</code>이면 <code class="box">false</code>, 아니면 <code class="box">true</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

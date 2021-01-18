@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Api</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Api</h2>
+        <div class="list">
+            <h5 class="path" id="this">Api</h5><h5 class="path">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path">Device</h5><h5 class="path">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="getcontext">
+        <h4 class="name">getContext</h4>
+        <pre><code class="code">getContext(): <i>android.content.Context</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱의 Context를 가져옵니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">android.content.Context</code>값</li>
+        </div>
+    </div>
+    <div class="box" id="reload">
+        <h4 class="name">reload</h4>
+        <pre><code class="code">reload(scriptName?: <i>String</i>, throwOnError?: <i>Boolean</i>): <i>void</i> | <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 스크립트 또는 특정 스크립트를 재컴파일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 재컴파일할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) 컴파일이 성공하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="compile">
+        <h4 class="name">compile</h4>
+        <pre><code class="code">compile(scriptName?: <i>String</i>, throwOnError?: <i>Boolean</i>): <i>void</i> | <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">reload()</code>와 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 재컴파일할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) 컴파일이 성공하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="prepare">
+        <h4 class="name">prepare</h4>
+        <pre><code class="code">prepare(scriptName: <i>String</i>): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트가 한번도 컴파일 된 적이 없을 경우에 컴파일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 컴파일할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">스크립트가 존재하지 않을 때: <code class="box">0</code></li>
+            <li class="para">컴파일을 성공했을 때: <code class="box">1</code></li>
+            <li class="para">1번 이상 컴파일 되었을 때: <code class="box">2</code></li>
+        </div>
+    </div>
+    <div class="box" id="unload">
+        <h4 class="name">unload</h4>
+        <pre><code class="code">unload(scriptName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트를 컴파일 전 상태로 전환(언로드)합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 언로드할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">정상적으로 완료되었을 때: <code class="box">true</code></li>
+            <li class="para">컴파일된 상태가 아니거나 스크립트가 존재하지 않을 때: <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="off">
+        <h4 class="name">off</h4>
+        <pre><code class="code">off(scriptName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 스크립트 또는 특정 스크립트의 작동을 비활성화합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 작동을 비활성화할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 없을 경우) <code class="box">true</code></li>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) 비활성화에 성공했을 경우: <code class="box">true</code></li>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) 스크립트가 존재하지 않거나 스크립트 설정에서 "<code class="box">Api.off()</code>무시" 설정이 활성화 되어있을 경우: <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="on">
+        <h4 class="name">on</h4>
+        <pre><code class="code">on(scriptName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 스크립트 또는 특정 스크립트의 작동을 활성화합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 작동을 활성화할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 없을 경우) <code class="box">true</code></li>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) 스크립트가 존재하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="ison">
+        <h4 class="name">isOn</h4>
+        <pre><code class="code">isOn(scriptName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트의 활성화 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 활성화 여부를 확인할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">활성화 상태이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="iscompiled">
+        <h4 class="name">isCompiled</h4>
+        <pre><code class="code">isCompiled(scriptName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트의 컴파일 완료 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 컴파일 완료 여부를 확인할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">컴파일 완료 상태이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="isCompiling">
+        <h4 class="name">isCompiling</h4>
+        <pre><code class="code">isCompiled(scriptName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트의 컴파일이 진행 중인지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName</i></code> : 컴파일 진행 중인지의 여부를 확인할 스크립트의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">컴파일 진행 중이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="getscriptnames">
+        <h4 class="name">getScriptNames</h4>
+        <pre><code class="code">getScriptNames(): <i>String[]</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 스크립트의 이름을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">스크립트 이름의 목록이 포함된 배열</li>
+        </div>
+    </div>
+    <div class="box" id="replyroom">
+        <h4 class="name">replyRoom</h4>
+        <pre><code class="code">replyRoom(room: <i>String</i>, message: <i>String</i>, hideToast?: <i>Boolean</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">메시지가 수신된 방 또는 지정된 방에 메시지를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 메시지를 보낼 방 이름</li>
+            <li class="para"><code class="box"><i>message</i></code> : 수신할 메시지</li>
+            <li class="para"><code class="box"><i>hideToast?</i></code> : 방 세션 존재 여부를 토스트 메시지로 출력하지 않을 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">room</code>방에 대한 방 세션이 있을 경우 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="canreply">
+        <h4 class="name">canReply</h4>
+        <pre><code class="code">canReply(room: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방에 메시지를 수신할 수 있는지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 메시지를 수신 가능 여부를 확인할 방 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>room</i></code> 방에 메시지 전송이 가능하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="showtoast">
+        <h4 class="name">showToast</h4>
+        <pre><code class="code">showToast(content: <i>String</i>, length?: <i>Int</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">토스트 메시지를 발생시킵니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>content</i></code> : 토스트 메시지로 출력할 내용</li>
+            <li class="para"><code class="box"><i>length?</i></code> : 토스트 메시지의 유지 시간</li>
+            <ul>
+                <li class="para"><code class="box">android.widget.Toast.LENGTH_SHORT</code> : 짧은 시간동안 출력 (기본값)</li>
+                <li class="para"><code class="box">android.widget.Toast.LENGTH_LONG</code> : 긴 시간동안 출력</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box" id="makenoti">
+        <h4 class="name">makeNoti</h4>
+        <pre><code class="code">makeNoti(title: <i>String</i>, content: <i>String</i> id?: <i>Int</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">알림을 띄웁니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>title</i></code> : 알림 제목</li>
+            <li class="para"><code class="box"><i>content</i></code> : 알림 내용</li>
+            <li class="para"><code class="box"><i>id?</i></code> : 알림 아이디 (같은 아이디의 알림일 경우 내용이 갱신됨)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"> <code class="box">true</code></li>
+        </div>
+    </div>
+    <div class="box" id="papagotranslate">
+        <h4 class="name">papagoTranslate</h4>
+        <pre><code class="code">papagoTranslate(sourceLanguage: <i>String</i>, targetLanguage: <i>String</i>, content: <i>String</i>, errorToString?: <i>Boolean</i>): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">텍스트를 지정된 타겟 언어로 번역합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>sourceLanguage</i></code> : <code class="box">content</code>의 언어</li>
+            <li class="para"><code class="box"><i>targetLanguage</i></code> : <code class="box">content</code>를 번역할 언어</li>
+            <li class="para"><code class="box"><i>content</i></code> : 번역할 텍스트</li>
+            <li class="para"><code class="box"><i>errorToString?</i></code> : 에러를 <code class="box">String</code>으로 반화할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>content</i></code>를 <code class="box"><i>targetLanguage</i></code>로 번역한 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" id="gc">
+        <h4 class="name">gc</h4>
+        <pre><code class="code">gc(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">카비지 컬렉팅을 강제로 시작합니다.</p>
+        </div>
+    </div>
+    <div class="box" id="uithread">
+        <h4 class="name">UIThread</h4>
+        <pre><code class="code">UIThread(func: <i>Function</i>, onComplete: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">UI쓰레드에서 특정 함수를 실행합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>func</i></code> : UI쓰레드에서 실행할 함수</li>
+            <li class="para"><code class="box"><i>onComplete</i></code> : 결과를 처리할 함수<br>
+                <ul>
+                    <li class="para"><code class="box"><i>error</i></code> : <code class="box"><i>func</i></code>함수 실행 도중 에러 발생 시 에러 객체를 전달받는 인자</li>
+                    <li class="para"><code class="box"><i>result</i></code> : <code class="box"><i>func</i></code>함수의 반환값을 전달받는 인자</li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" id="getactivethreadscound">
+        <h4 class="name">getActiveThreadsCound</h4>
+        <pre><code class="code">getActiveThreadsCound(scriptName?: <i>String</i>): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트 또는 이 메소드를 호출한 스크립트의 활성 쓰레드 수를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 활성 쓰레드 수를 확인할 스크립트 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 없을 경우) 해당 메소드를 호출한 스크립트의 활성 쓰레드 수</li>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) <code class="box"><i>scriptName?</i></code>의 활성 쓰레드 수</li>
+        </div>
+    </div>
+    <div class="box" id="interruptthreads">
+        <h4 class="name">interruptThreads</h4>
+        <pre><code class="code">interruptThreads(scriptName?: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 스크립트 또는 이 메소드를 호출한 스크립트의 쓰레드에 <code class="box">interrupt</code>요청을 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : <code class="box">interrupt</code>요청을 보낼 스크립트 이름</li>
+        </div>
+    </div>
+    <div class="box" id="isterminated">
+        <h4 class="name">isTerminated</h4>
+        <pre><code class="code">isTerminated(scriptName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">interruptThreads()</code>실행 이후, 특정 스크립트 또는 이 메소드를 호출한 스크립트의 모든 쓰레드가 <code class="box">interrupt</code>되었는지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>scriptName?</i></code> : 쓰레드가 모두 <code class="box">interrupt</code>되었는지의 여부를 확인할 스크립트 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 없을 경우) 해당 메소드를 호출한 스크립트의 모든 쓰레드가 <code class="box">interrupt</code>되었으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+            <li class="para">(<code class="box"><i>scriptName?</i></code>의 값이 있을 경우) <code class="box"><i>scriptName?</i></code>의 모든 쓰레드가 <code class="box">interrupt</code>되었으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="markasread">
+        <h4 class="name">markAsRead</h4>
+        <pre><code class="code">markAsRead(room?: <i>String</i>, packageName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">메시지가 수신된 방 또는 지정된 방의 메시지를 읽음 처리합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room?</i></code> : 알림을 읽을 채팅방</li>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 알림을 읽을 메신저 앱의 패키지명</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">알림 읽기 액션을 찾을 수 있으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

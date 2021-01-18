@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Broadcast</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Broadcast</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path" id="this">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="send">
+        <h4 class="name">send</h4>
+        <pre><code class="code">send(broadcastName: <i>String</i>, value: <i>Any</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 스크립트를 대상으로 특정 요소를 방송합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>broadcastName</i></code> : 방송의 이름</li>
+            <li class="para"><code class="box"><i>value</i></code> : 방송으로 전파할 값 (<code class="box">register()</code>와 <code class="box">unregister()</code>의 인자 <code class="box">task</code>의 인자로 주어짐.)</li>
+        </div>
+    </div>
+    <div class="box" id="register">
+        <h4 class="name">register</h4>
+        <pre><code class="code">register(broadcastName: <i>String</i>, task: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 브로드캐스트에 리스너를 등록합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>broadcastName</i></code> : 리스너를 등록할 대상 브로드캐스트</li>
+            <li class="para"><code class="box"><i>task</i></code> : <code class="box"><i>broadcastName</i></code> 브로드캐스트의 리스너로 등록할 함수
+                <ul>
+                    <li class="para"><code class="box"><i>value</i></code> : <code class="box"><i>broadcastName</i></code> 브로드캐스트의 방송으로 전달받은 값 (<code class="box">send()</code>의 두 번째 인자의 값을 전달받음.)</li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" id="unregister">
+        <h4 class="name">unregister</h4>
+        <pre><code class="code">unregister(broadcastName: <i>String</i>, task: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 리스너를 특정 브로드캐스트로부터 해제합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>broadcastName</i></code> : 리스너를 해제할 대상 브로드캐스트</li>
+            <li class="para"><code class="box"><i>task</i></code> : <code class="box"><i>broadcastName</i></code> 브로드캐스트로부터 해제할 리스너</li>
+        </div>
+    </div>
+    <div class="box" id="unregisterall">
+        <h4 class="name">unregisterAll</h4>
+        <pre><code class="code">unregisterAll(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 브로드캐스트에 등록된 모든 리스너를 해제합니다.</p>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

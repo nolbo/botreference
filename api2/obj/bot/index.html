@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Bot</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Bot</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path" id="this">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="setcommandprefix">
+        <h4 class="name">setCommandPrefix</h4>
+        <pre><code class="code">setCommandPrefix(prefix: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">카카오톡 봇 명령어의 접두어를 설정합니다. 설정된 접두어로 시작하는 메시지를 감지할 시 <code class="box" id="../api2/event/command" data-link="true">Event.COMMAND</code>를 발생시킵니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>prefix</i></code> : 카카오톡 봇 명령어의 접두사로 설정할 문자열 값</li>
+        </div>
+    </div>
+    <div class="box" id="send">
+        <h4 class="name">send</h4>
+        <pre><code class="code">send(room: <i>String</i>, msg: <i>String</i>, packageName?: String): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방에 메시지를 보냅니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 메시지를 보낼 방 이름</li>
+            <li class="para"><code class="box"><i>msg</i></code> : 보낼 메시지의 내용</li>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 메시지를 보낼 메신저 앱의 패키지명</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>room</i></code> 방에 대한 세션이 존재하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="canreply">
+        <h4 class="name">canReply</h4>
+        <pre><code class="code">canReply(room: <i>String</i>, packageName?: String): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 방에 대한 세션을 가지고 있는지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room</i></code> : 세션 존재 여부를 확인할 방의 이름</li>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 세션 존재 여부를 확인할 방이 소속된 메신저 앱의 패키지명</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>room</i></code> 방에 대한 세션이 존재하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="getname">
+        <h4 class="name">getName</h4>
+        <pre><code class="code">getName(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">해당 함수를 호출한 스크립트의 이름을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">해당 함수를 호출한 스크립트의 이름</li>
+        </div>
+    </div>
+    <div class="box" id="setpower">
+        <h4 class="name">setPower</h4>
+        <pre><code class="code">setPower(power: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트의 활성화 여부를 설정합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>power</i></code> : 스크립트의 활성화 여부를 설정할 불린 값 (<code class="box">true</code>: 활성화, <code class="box">false</code>: 비활성화)</li>
+        </div>
+    </div>
+    <div class="box" id="getpower">
+        <h4 class="name">getPower</h4>
+        <pre><code class="code">getPower(): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트의 활성화 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">스크립트가 활성화 상태이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="compile">
+        <h4 class="name">compile</h4>
+        <pre><code class="code">compile(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트를 컴파일합니다.</p>
+        </div>
+    </div>
+    <div class="box" id="unload">
+        <h4 class="name">unload</h4>
+        <pre><code class="code">unload(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">스크립트를 언로드(컴파일 전 상태로 복구)합니다.</p>
+        </div>
+    </div>
+    <div class="box" id="on">
+        <h4 class="name">on</h4>
+        <pre><code class="code">on(eventName: <i>String</i>, listener: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">이벤트 리스너를 등록합니다. (이벤트 리스너를 리스너 리스트의 맨 마지막에 추가)</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 대상 이벤트</li>
+            <li class="para"><code class="box"><i>listener</i></code> : <code class="box"><i>eventName</i></code> 이벤트 발생 시 호출될 함수(이벤트 리스너)</li>
+        </div>
+    </div>
+    <div class="box" id="addlistener">
+        <h4 class="name">addListener</h4>
+        <pre><code class="code">addListener(eventName: <i>String</i>, listener: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">on()</code>과 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 대상 이벤트</li>
+            <li class="para"><code class="box"><i>listener</i></code> : <code class="box"><i>eventName</i></code> 이벤트 발생 시 호출될 함수(이벤트 리스너)</li>
+        </div>
+    </div>
+    <div class="box" id="off">
+        <h4 class="name">off</h4>
+        <pre><code class="code">off(eventName: <i>String</i>, listener?: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">마지막에 등록되거나 지정한 이벤트 리스너를 해제합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 대상 이벤트</li>
+            <li class="para"><code class="box"><i>listener?</i></code> : <code class="box"><i>eventName</i></code> 이벤트에서 해제할 이벤트 리스너</li>
+        </div>
+    </div>
+    <div class="box" id="removelistener">
+        <h4 class="name">removeListener</h4>
+        <pre><code class="code">removeListener(eventName: <i>String</i>, listener?: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">off()</code>와 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 대상 이벤트</li>
+            <li class="para"><code class="box"><i>listener?</i></code> : <code class="box"><i>eventName</i></code> 이벤트에서 해제할 이벤트 리스너</li>
+        </div>
+    </div>
+    <div class="box" id="removealllisteners">
+        <h4 class="name">removeAllListeners</h4>
+        <pre><code class="code">removeAllListeners(eventName: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">지정된 이벤트에 등록된 모든 이벤트 리스너를 해제합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 모든 이벤트 리스너를 해제할 대상 이벤트</li>
+        </div>
+    </div>
+    <div class="box" id="prependlistener">
+        <h4 class="name">prependListener</h4>
+        <pre><code class="code">prependListener(eventName: <i>String</i>, listener: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">이벤트 리스너를 등록합니다. (이벤트 리스너를 리스너 리스트의 맨 앞에 추가)</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 대상 이벤트</li>
+            <li class="para"><code class="box"><i>listener</i></code> : <code class="box"><i>eventName</i></code> 이벤트 발생 시 호출될 함수(이벤트 리스너)</li>
+        </div>
+    </div>
+    <div class="box" id="listeners">
+        <h4 class="name">listeners</h4>
+        <pre><code class="code">listeners(eventName: <i>String</i>): <i>Array&lt;Function&gt;</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">지정된 이벤트에 등록된 이벤트 리스너들을 배열로 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> : 등록된 이벤트 리스너들의 대상 이벤트</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>eventName</i></code> 이벤트에 등록된 이벤트 리스너들의 배열</li>
+        </div>
+    </div>
+    <div class="box" id="markasread">
+        <h4 class="name">markAsRead</h4>
+        <pre><code class="code">markAsRead(room?: <i>String</i>, packageName?: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">메시지가 수신된 방 또는 지정된 방의 메시지를 읽음 처리합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>room?</i></code> : 알림을 읽을 채팅방</li>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 알림을 읽을 메신저 앱의 패키지명</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">알림 읽기 액션을 찾을 수 있으면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Device</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Device</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path">Log</h5><h5 class="path" id="this">Device</h5><h5 class="path">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="getbuild">
+        <h4 class="name">getBuild</h4>
+        <pre><code class="code">getBuild(): <i>android.os.Build</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">android.os.Build()</code>값을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">android.os.Build()</code>값</li>
+        </div>
+    </div>
+    <div class="box" id="getandroidversioncode">
+        <h4 class="name">getAndroidVersionCode</h4>
+        <pre><code class="code">getAndroidVersionCode(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 안드로이드 버전 코드를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 안드로이드 버전 코드</li>
+        </div>
+    </div>
+    <div class="box" id="getandroidversionname">
+        <h4 class="name">getAndroidVersionName</h4>
+        <pre><code class="code">getAndroidVersionName(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 안드로이드 버전 이름을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 안드로이드 버전 이름</li>
+        </div>
+    </div>
+    <div class="box" id="getphonebrand">
+        <h4 class="name">getPhoneBrand</h4>
+        <pre><code class="code">getPhoneBrand(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 휴대폰 브랜드명을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 휴대폰 브랜드명</li>
+        </div>
+    </div>
+    <div class="box" id="getphonemodel">
+        <h4 class="name">getPhoneModel</h4>
+        <pre><code class="code">getPhoneModel(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 환경의 휴대폰 모델명을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 환경의 휴대폰 모델명</li>
+        </div>
+    </div>
+    <div class="box" id="ischarging">
+        <h4 class="name">isCharging</h4>
+        <pre><code class="code">isCharging(): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기가 충전 중인지의 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 기기가 충전 중이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="getplugtype">
+        <h4 class="name">getPlugType</h4>
+        <pre><code class="code">getPlugType(): <i>String</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">충전기의 타입을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">충전기의 타입
+                <ul>
+                    <li class="para"><code class="box">acc</code></li>
+                    <li class="para"><code class="box">wireless</code></li>
+                    <li class="para"><code class="box">usb</code></li>
+                    <li class="para"><code class="box">unknown</code></li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" id="getbatterylevel">
+        <h4 class="name">getBatteryLevel</h4>
+        <pre><code class="code">getBatteryLevel(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기의 배터리 잔량(%)을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 기기의 배터리 잔량 (단위: %)</li>
+        </div>
+    </div>
+    <div class="box" id="getbatteryhealth">
+        <h4 class="name">getBatteryHealth</h4>
+        <pre><code class="code">getBatteryHealth(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기의 배터리 건강 상태에 대한 상수를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 기기의 배터리 건강 상태에 대한 상수
+                <ul>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_COLD = 7 (0x00000007)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_DEAD = 4 (0x00000004)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_GOOD = 2 (0x00000002)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_OVERHEAT = 3 (0x00000003)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_OVER_VOLTAGE = 5 (0x00000005)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_UNKNOWN = 1 (0x00000001)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_HEALTH_UNSPECIFIED_FAILURE = 6 (0x00000006)</code></li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" id="getbatterytemperature">
+        <h4 class="name">getBatteryTemperature</h4>
+        <pre><code class="code">getBatteryTemperature(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기의 <code class="box">배터리_온도(섭씨) * 10</code>의 값을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">배터리_온도(섭씨) * 10</code>의 값</li>
+        </div>
+    </div>
+    <div class="box" id="getbatteryvoltage">
+        <h4 class="name">getBatteryVoltage</h4>
+        <pre><code class="code">getBatteryVoltage(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기의 배터리 전압(mV)을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 기기의 배터리 전압(mV)</li>
+        </div>
+    </div>
+    <div class="box" id="getbatterystatus">
+        <h4 class="name">getBatteryStatus</h4>
+        <pre><code class="code">getBatteryStatus(): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱 구동 기기의 배터리 상태에 대한 상수를 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">앱 구동 기기의 배터리 상태에 대한 상수
+                <ul>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_STATUS_CHARGING = 2 (0x00000002)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_STATUS_DISCHARGING = 3 (0x00000003)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_STATUS_FULL = 5 (0x00000005)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_STATUS_NOT_CHARGING = 4 (0x00000004)</code></li>
+                    <li class="para"><code class="box">android.os.BatteryManager.BATTERY_STATUS_UNKNOWN = 1 (0x00000001)</code></li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" id="getbatteryintent">
+        <h4 class="name">getBatteryIntent</h4>
+        <pre><code class="code">getBatteryIntent(): <i>android.content.Intent</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))</code>값을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))</code>값</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

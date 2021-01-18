@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | Log</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">Log</h2>
+        <div class="list">
+            <h5 class="path">Api</h5><h5 class="path">Utils</h5><h5 class="path">FileStream</h5><h5 class="path">DataBase</h5><h5 class="path" id="this">Log</h5><h5 class="path">Device</h5><h5 class="path">Bridge</h5><h5 class="path">AppData</h5>
+        </div>
+    </div>
+    <div class="box" id="d">
+        <h4 class="name">d</h4>
+        <pre><code class="code">d(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">디버그 로그를 작성합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 디버그 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="debug">
+        <h4 class="name">debug</h4>
+        <pre><code class="code">debug(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">d()</code>와 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 디버그 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="e">
+        <h4 class="name">e</h4>
+        <pre><code class="code">e(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">에러 로그를 작성합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 에러 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="error">
+        <h4 class="name">error</h4>
+        <pre><code class="code">error(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">e()</code>와 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 에러 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="i">
+        <h4 class="name">i</h4>
+        <pre><code class="code">i(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">정보 로그를 작성합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 정보 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="info">
+        <h4 class="name">info</h4>
+        <pre><code class="code">info(data: <i>String</i>, showToast?: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt"><code class="box">i()</code>와 동일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>data</i></code> : 작성할 정보 로그의 내용</li>
+            <li class="para"><code class="box"><i>showToast</i></code> : 작성된 로그를 토스트 메시지로 출력할 것인지의 여부 (기본값: <code class="box">false</code>)</li>
+        </div>
+    </div>
+    <div class="box" id="clear">
+        <h4 class="name">clear</h4>
+        <pre><code class="code">clear(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">로그를 모두 삭제합니다.</p>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

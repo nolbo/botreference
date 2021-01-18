@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | BotManager</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">BotManager</h2>
+        <div class="list">
+            <h5 class="path">App</h5><h5 class="path">Bot</h5><h5 class="path" id="this">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="getcurrentbot">
+        <h4 class="name">getCurrentBot</h4>
+        <pre><code class="code">getCurrentBot(): <i>Bot</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">현재 스크립트에 할당된 <code class="box">Bot</code>을 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">스크립트에 할당된 <code class="box">Bot</code>객체</li>
+        </div>
+    </div>
+    <div class="box" id="getbot">
+        <h4 class="name">getBot</h4>
+        <pre><code class="code">getBot(botName: <i>String</i>): <i>Bot</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정한 <code class="box">Bot</code>을 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 반환받을 <code class="box">Bot</code>의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>botName</i></code> 이란 이름을 가진 <code class="box">Bot</code></li>
+        </div>
+    </div>
+    <div class="box" id="getrooms">
+        <h4 class="name">getRooms</h4>
+        <pre><code class="code">getRooms(packageName?: String): <i>Array&lt;String&gt;</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 메신저 앱 또는 특정 메신저 앱에서 받은 메시지들의 방 이름을 배열로 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>packageName?</i></code> : 메시지를 보낸 방들의 메신저 앱</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">(<code class="box"><i>packageName?</i></code> 의 값이 없는 경우) 모든 메신저 앱에서 받은 메시지들의 방 이름의 배열</li>
+            <li class="para">(<code class="box"><i>packageName?</i></code> 의 값이 있는 경우) <code class="box"><i>packageName?</i></code> 앱에서 받은 메시지들의 방 이름의 배열</li>
+        </div>
+    </div>
+    <div class="box" id="getbotlist">
+        <h4 class="name">getBotList</h4>
+        <pre><code class="code">getBotList(): <i>ArrayArray&lt;Bot&gt;</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 <code class="box">Bot</code>인스턴스를 배열로 반환합니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">모든 <code class="box">Bot</code>인스턴스의 배열</li>
+        </div>
+    </div>
+    <div class="box" id="getpower">
+        <h4 class="name">getPower</h4>
+        <pre><code class="code">getPower(botName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>의 활성화 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 활성화 여부를 확인할 <code class="box">Bot</code>의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>botName</i></code> 이란 이름을 가진 <code class="box">Bot</code>이 활성화 상태이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="setpower">
+        <h4 class="name">setPower</h4>
+        <pre><code class="code">setPower(botName: <i>String</i>, power: <i>Boolean</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>의 활성화 여부를 설정합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 활성화 여부를 설정할 <code class="box">Bot</code>의 이름</li>
+            <li class="para"><code class="box"><i>power</i></code> : 스크립트의 활성화 여부를 설정할 불린 값 (<code class="box">true</code>: 활성화, <code class="box">false</code>: 비활성화)</li>
+        </div>
+    </div>
+    <div class="box" id="compile">
+        <h4 class="name">compile</h4>
+        <pre><code class="code">compile(botName: <i>String</i>, throwOnError?: <i>Boolean</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>을 컴파일합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 컴파일할 <code class="box">Bot</code>의 이름</li>
+            <li class="para"><code class="box"><i>throwOnError?</i></code> : 컴파일 에러를 <code class="box">throw</code>할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>botName</i></code> 이란 이름을 가진 <code class="box">Bot</code>의 컴파일을 성공하면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="compileall">
+        <h4 class="name">compileAll</h4>
+        <pre><code class="code">compileAll(): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 <code class="box">Bot</code>을 컴파일합니다.</p>
+        </div>
+    </div>
+    <div class="box" id="prepare">
+        <h4 class="name">prepare</h4>
+        <pre><code class="code">prepare(botName: <i>String</i>, throwOnError?: <i>Boolean</i>): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>을 한 번도 컴파일한 적이 없을 경우 컴파일합니다.</p>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 한 번도 컴파일한 적이 없는 경우 컴파일할 <code class="box">Bot</code>의 이름</li>
+            <li class="para"><code class="box"><i>throwOnError?</i></code> : 컴파일 에러를 <code class="box">throw</code>할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">컴파일을 실패했을 때: <code class="box">0</code></li>
+            <li class="para">컴파일을 성공했을 때: <code class="box">1</code></li>
+            <li class="para">1번 이상 컴파일 되었을 때: <code class="box">2</code></li>
+        </div>
+    </div>
+    <div class="box" id="prepareall">
+        <h4 class="name">prepareAll</h4>
+        <pre><code class="code">prepareAll(throwOnError?: <i>Boolean</i>): <i>Int</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">모든 <code class="box">Bot</code>에 대하여 <code class="box">prepare()</code>를 실행합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>throwOnError?</i></code> : 컴파일 에러를 <code class="box">throw</code>할 것인지의 여부 (기본값: <code class="box">false</code>)</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para">새롭게 컴파일된 <code class="box">Bot</code>의 개수</li>
+        </div>
+    </div>
+    <div class="box" id="iscompiled">
+        <h4 class="name">isCompiled</h4>
+        <pre><code class="code">isCompiled(botName: <i>String</i>): <i>Boolean</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>의 컴파일 완료 여부를 반환합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 컴파일 완료 여부를 확인할 <code class="box">Bot</code>의 이름</li><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box"><i>botName</i></code> 이란 이름을 가진 <code class="box">Bot</code>의 컴파일이 완료된 상태이면 <code class="box">true</code>, 아니면 <code class="box">false</code></li>
+        </div>
+    </div>
+    <div class="box" id="unload">
+        <h4 class="name">unload</h4>
+        <pre><code class="code">unload(botName: <i>String</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 <code class="box">Bot</code>을 언로드(컴파일 전 상태로 복구)합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>botName</i></code> : 언로드할 <code class="box">Bot</code>의 이름</li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

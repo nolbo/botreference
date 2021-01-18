@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    href="../../../style/fonts.css">
+    <link rel="stylesheet"    href="../../../style/dscprt1.css"        media="all and (min-width:1024px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet"    href="../../../style/dscrpt1_mobile.css" media="all and (max-width:767px)">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/function.png">
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script type="text/javascript" src="../../../script/href.js"></script>
+    <title>KBot Reference | App</title>
+</head>
+<body id="obj">
+    <div class="title">
+        <h2 class="title">App</h2>
+        <div class="list">
+            <h5 class="path" id="this">App</h5><h5 class="path">Bot</h5><h5 class="path">BotManager</h5><h5 class="path">Broadcast</h5><h5 class="path">Database</h5><h5 class="path">Event</h5><h5 class="path">Http</h5><h5 class="path">SessionManager</h5><h5 class="path">Security</h5>
+        </div>
+    </div>
+    <div class="box" id="getcontext">
+        <h4 class="name">getContext</h4>
+        <pre><code class="code">getContext(): <i>android.content.Context</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">앱의 Context를 가져옵니다.</p><br><br>
+            <h3 class="sttl">리턴 값</h3>
+            <li class="para"><code class="box">android.content.Context</code>값</li>
+        </div>
+    </div>
+    <div class="box" id="runonuithread">
+        <h4 class="name">runOnUiThread</h4>
+        <pre><code class="code">runOnUiThread(task: <i>Function</i>, onComplete: <i>Function</i>): <i>void</i></code></pre>
+        <div class="txt">
+            <p class="dscrpt">특정 함수를 UI쓰레드에서 호출합니다.</p><br><br>
+            <h3 class="sttl">파라미터</h3>
+            <li class="para"><code class="box"><i>task</i></code> : UI쓰레드에서 실행할 함수</li>
+            <li class="para"><code class="box"><i>onComplete</i></code> : <code class="box"><i>task</i></code> 함수 실행 후 호출될 함수
+                <ul>
+                    <li class="para"><code class="box"><i>error</i></code> : <code class="box"><i>task</i></code> 함수 실행 도중 에러 발생 시 에러 객체를 전달받는 인자 (<code class="box">java.lang.Throwable</code>)</li>
+                    <li class="para"><code class="box"><i>result</i></code> : <code class="box"><i>task</i></code> 함수의 반환값을 전달받는 인자</li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <div class="box" style="visibility: hidden;"></div>
+</body>
+</html>

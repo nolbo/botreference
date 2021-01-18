@@ -1,0 +1,258 @@
+html::-webkit-scrollbar { display: none; }
+div::-webkit-scrollbar {       width: 0.3em; height: 0.3rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: transparent; }
+div::-webkit-scrollbar-thumb { width: 0.3em; height: 0.3rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: #dddddd; }
+div::-webkit-scrollbar-track { width: 0.3em; height: 0.3rem; border-radius: 0.5em 0.5em 0.5em 0.5em; background-color: transparent; }
+
+html {
+    width : 100%;
+    height: 100%;
+    margin: 0;
+    color: #515151;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 0rem;
+    margin: 0;
+}
+
+div.title {
+    width: 80%;
+    font-family: 'NS EB';
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+div.title > h2.title {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+div.list {
+    margin-top: 1rem;
+    font-family: 'NS EB';
+    overflow: auto;
+    padding-bottom: 0.8rem;
+}
+
+div.list > h5.path {
+    display: inline;
+    font-size: 0.85rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+
+body#obj h5#this {
+    color: #ff9100;
+    text-shadow: 0rem 0rem 0.5rem #ff9100a8;
+}
+
+body#event h5#this {
+    color: #8400ff;
+    text-shadow: 0rem 0rem 0.5rem #8400ffa8;
+}
+
+body#eventlis h5#this {
+    color: #00bbff;
+    text-shadow: 0rem 0rem 0.5rem #00bbffa8;
+}
+
+div.box {
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem 0rem #dddddd;
+    width: 80%;
+    padding: 0.8rem 2rem;
+    padding-bottom: 1.5rem;
+    
+
+    transition-property: box-shadow;
+    transition-duration: 0.4s;
+}
+
+div.box#obj:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
+}
+
+div.box#event:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+}
+
+div.box#eventlis:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+#obj div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
+}
+
+#event div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #8400ff;
+}
+
+#eventlis div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+div.box[data-nonim = "true"]:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff00aa !important;
+}
+
+div[data-nonim = "true"] i {
+    color: #ff00aa !important;
+    text-shadow: 0rem 0rem 1rem #ff00aaa8 !important;
+}
+
+div.boxttl {
+    margin-top: 1.7rem;
+    font-family: 'NS EB';
+}
+
+div.boxttl > img.icon {
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 0.9rem;
+}
+
+img#obj {
+    filter: drop-shadow(0rem 0rem 0.8rem #ff9100a8);
+}
+
+img#event {
+    filter: drop-shadow(0rem 0rem 0.8rem #8400ffa8);
+}
+
+img#event_lis {
+    filter: drop-shadow(0rem 0rem 0.8rem #00bbffa8);
+}
+
+div.boxttl > h2.title {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: relative;
+    top: -0.6rem;
+}
+
+div.box > h4.name {
+    font-family: 'NS EB';
+    font-size: 1rem;
+}
+
+body#main h4.name {
+    cursor: pointer;
+}
+
+div.box > pre {
+    margin-bottom: 1rem;
+    white-space: pre-line;
+    width: 100%;
+}
+
+div.box > pre > code.code {
+    font-family: 'JB', 'NGC B';
+    font-size: 1rem;
+}
+
+div[data-nonim = "true"] code.code {
+    color: #ff00aa;
+}
+
+code.box {
+    display: inline;
+    font-family: 'JB', 'NGC B';
+}
+
+code[data-link = "true"] {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body#obj code[data-link = "true"] {
+    color: #ff9100;
+}
+
+body#event code[data-link = "true"] {
+    color: #8400ff;
+}
+
+body#eventlis code[data-link = "true"] {
+    color: #00bbff;
+}
+
+div[data-nonim = "true"] code[data-link = "true"] {
+    color: #ff00aa !important;
+}
+
+i {
+    font-family: 'JB I', 'NGC B';
+}
+
+i[data-link] {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body#obj i {
+    color: #ff9100;
+    text-shadow: 0rem 0rem 1rem #ff9100a8;
+}
+
+body#event i {
+    color: #8400ff;
+    text-shadow: 0rem 0rem 1rem #8400ffa8;
+}
+
+body#eventlis i {
+    color: #00bbff;
+    text-shadow: 0rem 0rem 1rem #00bbffa8;
+}
+
+div[data-nonim = "true"] i {
+    color: #ff00aa !important;
+    text-shadow: 0rem 0rem 1rem #ff00aaa8 !important;
+}
+
+div.box > div.txt > p.dscrpt {
+    display: inline;
+    font-size: 0.85rem;
+    font-family: 'NS B';
+    line-height: 1.5rem;
+}
+
+strong.link {
+    cursor: pointer;
+    font-family: 'NS EB';
+    text-decoration: underline;
+}
+
+body#obj strong.link {
+    color: #ff9100;
+}
+
+body#event strong.link {
+    color: #8400ff;
+}
+
+body#eventlis strong.link {
+    color: #00bbff;
+}
+
+div[data-nonim = "true"] strong.link {
+    color: #ff00aa !important;
+}
+
+h3.sttl {
+    font-family: 'NS EB';
+    font-size: 1.1rem;
+}
+
+li.para {
+    font-family: 'NS B';
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
