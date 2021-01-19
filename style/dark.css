@@ -23,7 +23,13 @@ body#eventlis h5#this {
     text-shadow: 0rem 0rem 0.7rem #00bbff;
 }
 
+body#fun h5#this {
+    color: #00bbff;
+    text-shadow: 0rem 0rem 0.7rem #ff3300;
+}
+
 div.box {
+    background: #333333;
     box-shadow: 0rem 0rem 1.5rem 0rem black;
 }
 
@@ -39,6 +45,10 @@ div.box#eventlis:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
 }
 
+div.box#fun:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff3300;
+}
+
 #obj div.box:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
 }
@@ -49,6 +59,10 @@ div.box#eventlis:hover {
 
 #eventlis div.box:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+#fun div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff3300;
 }
 
 div.box[data-nonim = "true"]:hover {
@@ -83,6 +97,10 @@ body#eventlis code[data-link = "true"] {
     color: #00bbff;
 }
 
+body#fun code[data-link = "true"] {
+    color: #ff3300;
+}
+
 div[data-nonim = "true"] code[data-link = "true"] {
     color: #ff00aa !important;
 }
@@ -100,6 +118,11 @@ body#event i {
 body#eventlis i {
     color: #00bbff;
     text-shadow: 0rem 0rem 1rem #00bbff;
+}
+
+body#fun i {
+    color: #ff3300;
+    text-shadow: 0rem 0rem 1rem #ff3300;
 }
 
 div[data-nonim = "true"] i {
@@ -130,6 +153,10 @@ body#event strong.link {
 
 body#eventlis strong.link {
     color: #00bbff;
+}
+
+body#fun strong.link {
+    color: #ff3300;
 }
 
 div[data-nonim = "true"] strong.link {
