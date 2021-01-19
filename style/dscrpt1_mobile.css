@@ -60,6 +60,11 @@ body#eventlis h5#this {
     text-shadow: 0rem 0rem 0.5rem #00bbffa8;
 }
 
+body#fun h5#this {
+    color: #ff3300;
+    text-shadow: 0rem 0rem 0.5rem #ff3300a8;
+}
+
 div.box {
     margin: 0rem auto;
     margin-bottom: 2rem;
@@ -68,7 +73,7 @@ div.box {
     width: 80%;
     padding: 0.8rem 2rem;
     padding-bottom: 1.5rem;
-    
+    cursor: pointer;
 
     transition-property: box-shadow;
     transition-duration: 0.4s;
@@ -86,6 +91,10 @@ div.box#eventlis:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
 }
 
+div.box#fun:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff3300;
+}
+
 #obj div.box:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #ff9100;
 }
@@ -96,6 +105,10 @@ div.box#eventlis:hover {
 
 #eventlis div.box:hover {
     box-shadow: 0rem 0rem 1.5rem 0rem #00bbff;
+}
+
+#fun div.box:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #ff3300;
 }
 
 div.box[data-nonim = "true"]:hover {
@@ -129,6 +142,10 @@ img#event {
 
 img#event_lis {
     filter: drop-shadow(0rem 0rem 0.8rem #00bbffa8);
+}
+
+img#fun {
+    filter: drop-shadow(0rem 0rem 0.8rem #ff3300a8);
 }
 
 div.boxttl > h2.title {
@@ -185,6 +202,10 @@ body#eventlis code[data-link = "true"] {
     color: #00bbff;
 }
 
+body#fun code[data-link = "true"] {
+    color: #ff3300;
+}
+
 div[data-nonim = "true"] code[data-link = "true"] {
     color: #ff00aa !important;
 }
@@ -211,6 +232,11 @@ body#event i {
 body#eventlis i {
     color: #00bbff;
     text-shadow: 0rem 0rem 1rem #00bbffa8;
+}
+
+body#fun i {
+    color: #ff3300;
+    text-shadow: 0rem 0rem 1rem #ff3300a8;
 }
 
 div[data-nonim = "true"] i {
@@ -243,6 +269,10 @@ body#eventlis strong.link {
     color: #00bbff;
 }
 
+body#eventlis strong.link {
+    color: #ff3300;
+}
+
 div[data-nonim = "true"] strong.link {
     color: #ff00aa !important;
 }
@@ -256,4 +286,8 @@ li.para {
     font-family: 'NS B';
     font-size: 0.85rem;
     line-height: 1.3rem;
+}
+
+a[download] {
+    display: none;
 }

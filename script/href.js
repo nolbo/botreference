@@ -7,7 +7,7 @@ $(function() {
         if(location.pathname === '/index.html' || location.pathname === '/') {
             const parent = $(this).parent();
 
-            location.href = `${parent.attr('data-folder')}/${parent.attr('id')}/${$(this).text().toLowerCase()}/index.html`
+            location.href = `${parent.attr('data-folder')}/${parent.attr('id')}/${$(this).text().replace(/#/g, '').toLowerCase()}/index.html`
         }
     });
 
